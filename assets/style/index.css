@@ -1,0 +1,79 @@
+:root {
+    --pink:pink;
+    --green: green;
+    --blue: blue;
+    --red: red;
+    --purple: purple;
+    --grey: grey;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    width: 100vw;
+    height: 100vh;
+    font-size: 0px;
+}
+
+.rosado {
+    background-color: var(--pink);
+}
+
+.verde {
+    background-color: var(--green);
+}
+
+.azul {
+    background-color: var(--blue);
+}
+
+.rojo {
+    background-color: var(--red);
+}
+
+.morado {
+    background-color: var(--purple);
+}
+
+.gris {
+    background-color: var(--grey);
+}
+
+@media(max-width: 500px) {
+    .rosado, .verde { height: 26%; }
+
+    .azul { height: 14%; }
+
+    .gris { height: 34%; }
+
+    .rojo, .morado { display: none; }
+}
+
+@media(min-width: 501px) and (max-width: 750px) {
+    .rosado { height: 27%; }
+
+    /* .verde { height: 27%; width: 33%; display: inline-block; }
+
+    .azul { height: 27%; width: 33%; display: inline-block; }
+
+    .rojo { height: 27%; width: 33%; display: inline-block ;} */
+
+    /* margin top left bottom rigth  */
+    .verde, .azul, .rojo { height: 27%; width: 32%; display: inline-block; margin: 0% 0.3% 0.5% 0.3%; } 
+
+    .morado { height: 46%; width: 61%; display: inline-block; }
+    
+    .gris { height: 46%; width: 37%; display: inline-block; margin: 0% 0% 0% 0.5%; }
+}
+
+@media(min-width: 751px) {
+    .rosado { height: 5%; }
+
+    .verde { height: 26%; }
+
+    .azul { height: 40%; }
+
+    .rojo, .morado, .gris { height: 29%; width: 33.3%; display: inline-block; }   
+}
